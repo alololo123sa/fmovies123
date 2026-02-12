@@ -15,16 +15,16 @@ export async function generateMetadata({ params }) {
   const title = genre?.name || 'Unknown';
 
   const pageUrl = `https://fmovies123.vercel.app/movie/genre/${genreName}`;
-  const imageUrl = 'https://live.staticflickr.com/65535/54839015079_bf28bf0c9d_b.jpg';
+  const imageUrl = 'https://live.staticflickr.com/65535/54796154293_fa66ff7825_b.jpg';
 
   return {
-    title: `Fmovies - ${title} Movies`,
-    description: `Find and watch the best ${title} movies for free on Fmovies.`,
+    title: `FMovies - ${title} Movies`,
+    description: `Find and watch the best ${title} movies for free on FMovies.`,
     openGraph: {
-      title: `Fmovies - ${title} Movies`,
-      description: `Find and watch the best ${title} movies for free on Fmovies.`,
+      title: `FMovies - ${title} Movies`,
+      description: `Find and watch the best ${title} movies for free on FMovies.`,
       url: pageUrl,
-      siteName: 'Fmovies',
+      siteName: 'FMovies',
       images: [
         {
           url: imageUrl,
@@ -40,8 +40,8 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       site: '@WatchStream123',
       creator: '@WatchStream123',
-      title: `Fmovies - ${title} Movies`,
-      description: `Find and watch the best ${title} movies for free on Fmovies.`,
+      title: `FMovies - ${title} Movies`,
+      description: `Find and watch the best ${title} movies for free on FMovies.`,
       images: [imageUrl],
     },
     other: {

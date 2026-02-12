@@ -41,16 +41,16 @@ export async function generateMetadata({ params }) {
   const title = genre?.name || 'Unknown';
   
   const pageUrl = `https://fmovies123.vercel.app/tv-show/genre/${genreName}`;
-  const imageUrl = 'https://live.staticflickr.com/65535/54839015079_bf28bf0c9d_b.jpg';
+  const imageUrl = 'https://live.staticflickr.com/65535/54796154293_fa66ff7825_b.jpg';
 
   return {
-    title: `Juswatch - ${title} TV Series`,
-    description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+    title: `FMovies - ${title} TV Series`,
+    description: `Find and watch the best ${title} TV series for free on FMovies.`,
     openGraph: {
-      title: `Juswatch - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+      title: `FMovies - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on FMovies.`,
       url: pageUrl,
-      siteName: 'Juswatch',
+      siteName: 'FMovies',
       images: [
         {
           url: imageUrl,
@@ -66,8 +66,8 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       site: '@WatchStream123',
       creator: '@WatchStream123',
-      title: `Juswatch - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+      title: `FMovies - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on FMovies.`,
       images: [imageUrl],
     },
     other: {

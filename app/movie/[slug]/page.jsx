@@ -39,8 +39,8 @@ export async function generateMetadata({ params }) {
   if (CATEGORIES.includes(slug)) {
     const title = slug.replace(/_/g, ' ').toUpperCase();
     return {
-      title: `Fmovies - ${title} Movies`,
-      description: `Explore the ${title} movies collection on Fmovies.`,
+      title: `FMovies - ${title} Movies`,
+      description: `Explore the ${title} movies collection on FMovies.`,
     };
   }
 
@@ -51,8 +51,8 @@ export async function generateMetadata({ params }) {
     const genres = await getMovieGenres();
     const genreName = genres.find(g => g.id == genreId)?.name || 'Unknown';
     return {
-      title: `Fmovies - ${genreName} Movies`,
-      description: `Discover ${genreName} movies on Fmovies.`,
+      title: `FMovies - ${genreName} Movies`,
+      description: `Discover ${genreName} movies on FMovies.`,
     };
   }
 
@@ -83,8 +83,8 @@ export async function generateMetadata({ params }) {
   // Jika data tidak ditemukan, kembalikan metadata dasar
   if (!movieData) {
     return {
-      title: 'Fmovies',
-      description: 'Watch Movie Stream Movies and Tv Series Free.',
+      title: 'FMovies',
+      description: 'Find your favorite movies to stream.',
     };
   }
 
@@ -99,13 +99,13 @@ export async function generateMetadata({ params }) {
   const socialImageAlt = `${movieData.title} poster`;
 
   return {
-    title: `Fmovies - ${movieData.title}`,
+    title: `FMovies - ${movieData.title}`,
     description: movieData.overview || `Detailed information for movie ${movieData.title}`,
     openGraph: {
       title: movieData.title,
       description: movieData.overview || `Detailed information for movie ${movieData.title}`,
-      url: `https://Fmovies123.vercel.app/movie/${slug}`,
-      siteName: 'Fmovies',
+      url: `https://fmovies123.vercel.app/movie/${slug}`,
+      siteName: 'FMovies',
       images: [
         {
           url: socialImage,
@@ -419,7 +419,7 @@ export default async function MoviePage({ params }) {
 		{/* Bottom Stream Button */}
         <div className="mt-12 text-center">
              <a href={`/movie/${slug}/stream`}>
-              <button className="bg-blue-700 hover:bg-green-800 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105 shadow-lg">
+              <button className="bg-blue-700 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105 shadow-lg">
                 🎬 Stream Now
               </button>
             </a>
